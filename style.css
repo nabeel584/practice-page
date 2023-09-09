@@ -183,7 +183,7 @@ button{
     font-size: 1rem;
     letter-spacing: 2;
   }
-  span{
+  .price{
     color: rgb(218, 105, 14);
     margin-right: 15px;
     text-decoration: underline;
@@ -206,31 +206,184 @@ button{
     margin: auto;
   }
 
-  .boxes1{
+.photoarray{
     margin-top: 40px;
-    columns: 2;
-    row-gap: 20px;
-    column-gap: 20px;
-    
-}
-.boxx1{
-    background-image: url(images/beauty1.png);
-    height: 800px;
-    width: 800px;
-    background-size: cover;
-    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "photoOne photoOne photoTwo"
+    "photoOne photoOne photoThree";
+    grid-template-columns: 25% 25% 45%;
 
 }
-.boxx2{
+.photoarray div{
+    border: 2px black solid;
+}
+
+.photoarray div:first-child{
+    grid-area: photoOne;
+    height: 450px;
+}
+.photo1{
     background-image: url(images/beauty2.png);
-    height: 400px;
-    width: 600px;
-    background-size: cover;
-   
 }
-.boxx3{
-    background-image: url(images/beauty3.png);
-    height: 400px;
-    width: 600px;
-    background-size: cover;
+.photo2{
+    background-image: url(images/beauty2.png);
 }
+.photo3{
+    background-image: url(images/beauty2.png);
+}
+.photo1 h1{
+    font-size: 3rem;
+    width: 30%;
+    float: right;
+    position: relative;
+    top: 40%;
+    right: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.photo2 h1{
+    font-size: 2.5rem;
+    width: 50%;
+    float: left;
+    position: relative;
+    top: 25%;
+    left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.photo3 h1{
+    font-size: 2.5rem;
+    width: 40%;
+    float: right;
+    position: relative;
+    top: 30%;
+    right: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.photos{
+    color: rgb(218, 143, 14);
+  }
+
+  .last_container{
+    margin-top: 40px;
+    text-align: center;
+    background-image: url(images/background.png);
+    height: 300px;
+  }
+  .last_container p{
+    margin: 20px 0px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .last_container h1{
+    margin: 20px 0px;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .last_container input{
+    margin: 20px 0px;
+    width: 20%;
+    height: 30px;
+  }
+
+  .footerimg{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 48%;
+  }
+  .footerimg img{
+    margin: 0px 10px;
+  }
+
+@media (max-width:1368px) {
+    nav ul li a{
+        margin: 0px 10px;    
+    }
+    .showcase{
+        width: 60%;
+        margin: auto;
+      }
+    .boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .photo1 h1{
+        font-size: 1.5rem;
+      }
+      .photo2 h1{
+        font-size: 1.5rem;
+      }
+      .photo3 h1{
+        font-size: 1.5rem;
+      }
+}
+@media (max-width:1068px) {
+    nav{
+        display: none;
+    }
+    .wrap h1{
+        font-size: 2rem;}
+        .btn button{
+            font-size: 1rem;
+        }
+        .btn a{
+            font-size: 1rem;
+        }
+  
+}
+@media (max-width:768px) {
+    .boxes{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+      .showcase{
+        width: 50%;
+        margin: auto;
+      }
+      .photoarray{
+    
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "photoOne"
+        "photoTwo"
+        "photoThree";
+        grid-template-columns: 1fr;
+    
+    }
+    .photo2{
+        height: 200px;
+    }
+    .photo3{
+        height: 200px;
+    }
+}
+@media (max-width:368px) {
+    .showcase{
+        width: 90%;
+        margin: auto;
+      }
+      .wrap h1{
+        font-size: 1.5rem;}
+        .wrap p{
+            font-size: 1rem;
+        }
+        .btn button{
+            font-size: 1rem;
+        }
+        .btn a{
+            font-size: 1rem;
+        }
+        .photo1 h1{
+            font-size: 1.5rem;
+            position: relative;
+            right: 25%;
+        }
+    }
