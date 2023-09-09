@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TOP CONTAINER */
+
+/* LOGO */
+
+.outer_container{
+    width: 250%;
+    height: 800px;
+    background-image: url(images/beauty.png);
+    background-size: cover;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 15%;
+}
+.logo h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font: 2rem;
+    font-weight: 700;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+
+/* NAV BAR */
+
+nav{
+    position: absolute;
+    right: 10%;
+    top: 4%;
+}
+
+nav ul{
+    float: right;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(26, 23, 23);
+    margin: 0px 20px;
+    font-size: 1.5rem;
+}
+
+/* SIDE BAR OF MAIN OUTER CONTAINER */
+
+.wrap{
+    float: right;
+    width: 35%;
+    position: absolute;
+    top: 30%;
+    right: 15%;
+}
+
+.website{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    letter-spacing: 1;
+}
+.wrap h1{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+.wrap p{
+    width: 90%;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0px;
+}
+button{
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: white;
+    margin: 10px 0px;
+}
+.btn a{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+}
+
+/* SOCIAL ICONS */
+
+
+.social_icons img{
+    margin: 10px 0px;
+    width: 40px;
+    height: 40px;
+}
+.social_icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 120%;
+    bottom: 40;
+}
+
+
+/* Arrow Buttons */
+
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    
+    border-bottom: 15px solid black;
+  }
+  
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    
+    border-top: 15px solid rgb(0, 0, 0);
+  }
+
+  /* SHOWCASE CONTENT */
+
+  .showcase{
+    width: 80%;
+    margin: auto;
+  }
+
+  .content{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .content h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0px;
+  }
+  .content p{
+    line-height: 2;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0px;
+  }
+
+  /* SHOWCASE GRIDS */
+
+  .boxes img{
+    height: 400px;
+    width: 300px;
+  }
+  .boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .boxes h2{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin: 15px 0px;
+  }
+  .boxes p{
+    margin: 10px 0px;
+    font-size: 1rem;
+    letter-spacing: 2;
+  }
+  span{
+    color: rgb(218, 105, 14);
+    margin-right: 15px;
+    text-decoration: underline;
+    font-size: 1.5rem;
+  }
+
+  .boxes h4{
+    text-decoration: line-through;
+  }
+  .text{
+    display: flex;
+    align-items: end;
+  }
+
+
+  /* MAIN SHOWCASE */
+
+  .main_showcase{
+    width: 80%;
+    margin: auto;
+  }
+
+  .boxes1{
+    margin-top: 40px;
+    columns: 2;
+    row-gap: 20px;
+    column-gap: 20px;
+    
+}
+.boxx1{
+    background-image: url(images/beauty1.png);
+    height: 800px;
+    width: 800px;
+    background-size: cover;
+    
+
+}
+.boxx2{
+    background-image: url(images/beauty2.png);
+    height: 400px;
+    width: 600px;
+    background-size: cover;
+   
+}
+.boxx3{
+    background-image: url(images/beauty3.png);
+    height: 400px;
+    width: 600px;
+    background-size: cover;
+}
